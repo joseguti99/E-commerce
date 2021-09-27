@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/formulario.css">
+    <link rel="stylesheet" href="/css/estilos-propios.css">
+    <title>Document</title>
+</head>
+
+<body>  
+    <div class="container">
+        <div class="row text-center">
+            <h3 class="FontResumen">RESUMEN DE COMPRA</h3>
+        </div>
+    </div>
+    <div class="container text-center">
+        <table class="table">
+            <thead>
+                <tr class="row bg-info">
+                    <th class="col-4 fontTitleCart">Titulo</th>
+                    <th class="col-2 fontTitleCart">Cantidad</th>
+                    <th class="col-2 fontTitleCart">Precio</th>
+                    <th class="col-2 fontTitleCart"></th>
+                    <th class="col-2"></th>
+                </tr>
+            </thead>
+            <tbody id="productos-del-carro">
+            </tbody>
+        </table>
+        <div class="row justify-content-end">
+            <h4 class="col-3 m-2 priceFinal">TOTAL</h4>
+            <h5 class="col-3 m-2 border priceFinal" id="precio-Final"></h5>
+        </div>
+    </div>
+    <div class="row justify-content-center py-3" id="botonPagar">
+        
+    </div>
+    <div id="metodoPago">
+
+    </div>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/resumen.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

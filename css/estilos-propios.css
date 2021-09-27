@@ -1,0 +1,101 @@
+.imagen-card {
+    width: 250px;
+    height: 250px;
+    text-align: center;
+}
+.imagen-mp{
+    width: 200px;
+    height: 100px;
+}
+.imagen-modal{
+    width: 400px;
+    height: 400px;
+}
+/*NAVBAR*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(7, 237, 245, 0.822);
+    text-align: center;
+    border-bottom: 2px solid rgba(149, 141, 141, 0.513);
+}
+
+li {
+    display:inline-block;
+}
+
+li a {
+    margin: 5px;
+    color:white;
+    display: block;
+    text-align: center;
+    justify-content: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-radius: 35px;
+    background-color: rgb(231, 25, 76);
+}
+
+li a:hover {
+    text-decoration: none;
+    color:white;
+    background-color:rgb(94, 23, 235);
+}
+
+.bgc-color{
+    background-color: rgba(149, 141, 141, 0.144);
+}
+.pointer{
+    cursor: pointer;
+}
+.fontPrice{
+    font-size: 40px;
+    /* color: black; */
+    color: rgba(7, 237, 245, 0.822);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.fontTitle{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    font-family: monospace;
+}
+.priceFinal{
+    font-size: 40px;
+    /* color: black; */
+    color: rgba(7, 7, 7, 0.822);
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.fontTitleCart{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.bg-violet{
+    background-color:rgb(94, 23, 235);
+}
+.FontResumen{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.FontTitlePrincipal{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color:rgb(94, 23, 235) ;
+    font-size: 50px;
+}
+.FontParrafoPrincipal{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    color:black;
+    font-size: 15px;
+}
+.carouselCenter{
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+.marginCarrousel{
+    margin-bottom: 42px;
+}

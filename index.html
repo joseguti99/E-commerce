@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos Propios -->
+    <link rel="stylesheet" href="/css/estilos-propios.css">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <title>Inicio / Sist-Em</title>
+</head>
+<body>
+    <div class="container-fluid sticky-top">
+        <nav class="row mb-3">
+            <ul class="nav justify-content-end">
+                <li class="nav-item col-1 pointer NoVisible" style="display: none;">
+                    <a class="active" data-bs-toggle="modal" data-bs-target="#modalIngreso">Ingresar<img
+                            src="/img/login.svg" alt=""></a>
+                </li>
+                <li class="nav-item col-1 pointer NoVisible" style="display: none;">
+                    <a class="active" data-bs-toggle="modal" data-bs-target="#modalRegistro">Registrarse<img
+                            src="/img/login.svg" alt=""></a>
+                </li>
+                <li class="nav-item col-1 pointer Visible" style="display: none;">
+                    <a class="active" id="cerrarSesion" data-bs-toggle="modal" data-bs-target="#signUpModal">Cerrar
+                        Sesion<img src="/img/login.svg" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- MODAL DE INGRESAR -->
+    <div class="modal fade" id="modalIngreso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Ingreso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formulario">
+                        <div class="form-group pb-3">
+                            <input type="email" id="inputEmail" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="form-group pb-3">
+                            <input type="password" id="inputPassword" autocomplete="on" class="form-control"
+                                placeHolder="Contraseña" required>
+                        </div>
+                        <div class="pb-3">
+                            <button type="submit" class="btn btn-secondary col-12 mb-2">Ingresar</button>
+                            <button type="button" class="btn btn-danger col-12 mb-2" id="google"><svg width="25" height="25" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"/>
+                                </svg> Ingresar con
+                                Google</button>
+                                
+                            <button type="button" class="btn btn-primary col-12" id="facebook"><svg width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                            </svg> Ingresar con
+                                Facebook</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL DE REGISTRO -->
+    <div class="modal fade" id="modalRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <h5 class="modal-title" id="exampleModalLabel">Registro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formularioRegistro">
+                        <div class="form-group pb-3">
+                            <input type="email" id="inputEmailRegistro" class="form-control" placeholder="Email"
+                                required>
+                        </div>
+                        <div class="form-group pb-3">
+                            <input type="password" id="inputPasswordRegistro" autocomplete="on" class="form-control"
+                                placeHolder="Contraseña" required>
+                        </div>
+                        <div class="pb-3">
+                            <button type="submit" class="btn btn-primary">Ingresar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mb-3">
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-6 text-center">
+                <img src="/img/syst-em.png" class="img-fluid" alt="">
+            </div>
+            <div class="col-3 pt-5 text-center">
+                <a class="btn border Visible col-4" href="/pages/resumen-compra.html"><svg width="40" height="40" fill="currentcolor" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    <span id="contador-productos" class="badge bg-dark text-white ms-1 rounded-pill"
+                        onclick="agregarAlCarrito('${producto.titulo}')">0</span>
+                </a>
+            </div>
+        </div>
+        <div class="container-fluid Visible">
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-2">
+                            <div class="text-center mb-3">
+                                <h5>CATEGORIAS</h5>
+                            </div>
+                            <hr>
+                            <!-- <a href="index.html" class="text-decoration-none btn btn-outline-info text-dark border border col-12 mb-3">Todo</a><br> -->
+                            <button class="btn btn-outline-info text-dark border col-12 mb-3" type="button"
+                                onclick="mostrarTodo()">Todo</button><br>
+                            <button class="btn btn-outline-info text-dark border col-12 mb-3" type="button"
+                                onclick="filtroProducto('parlante')">Parlantes</button><br>
+                            <button class="btn btn-outline-info text-dark border col-12 mb-3" type="button"
+                                onclick="filtroProducto('auricular')">Auriculares</button><br>
+                            <button class="btn btn-outline-info text-dark border col-12 mb-3" type="button"
+                                onclick="filtroProducto('gaming')">Gaming</button><br>
+                            <div class="text-center mb-3">
+                                <h5>Ordenar Por Precio</h5>
+                            </div>
+                            <div>
+                                <hr>
+                                <button class="btn btn-outline-info text-dark border col-12 mb-3" type="button"
+                                    onclick="menorAMayor()">Menor a
+                                    mayor</button><br>
+                                <button class="btn btn-outline-info text-dark border col-12 mb-3" type="button"
+                                    onclick="mayorAMenor()">Mayor a
+                                    menor</button><br>
+                                <button class="btn btn-outline-info text-dark border col-12 mb-3"
+                                    id="exclusivos">Exclusivos</button>
+                            </div>
+                        </div>
+                        <div class="col-9 bgc-color py-2">
+                            <div class="row justify-content-start" id="listas"></div>
+                        </div>
+                        <div class="col-1">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid NoVisible"  style="display: none;">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner carouselCenter">
+                    <div class="carousel-item active" data-bs-interval="2000">
+                        <img src="img/airpods-png.jpg" class="col-4 mx-5 w-25 img-fluid" alt="...">
+                        <img src="/img/auris-akg.png" class="col-4 mx-5 w-25 img-fluid" alt="...">
+                        <img src="/img/auris-clasic-sam.png" class="col-4 mx-5 w-25 img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item marginCarrousel" data-bs-interval="2000">
+                        <img src="/img/auris-xiaomi.png" class="col-4 mx-5 w-25 img-fluid" alt="...">
+                        <img src="/img/hyperx.png" class="col-4 mx-5 w-25 img-fluid" alt="...">
+                        <img src="/img/jbl-acolchonado.jpg" class="col-4 mx-5 w-25 img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item marginCarrousel" data-bs-interval="2000">
+                        <img src="/img/jbl-gris.jpg" class="col-4 mx-5 w-25 img-fluid" alt="...">
+                        <img src="/img/jbl-negro.jpg" class="col-4 mx-5 w-25 img-fluid" alt="...">
+                        <img src="/img/kotion.png" class="col-4 mx-5 w-25 img-fluid" alt="...">
+                    </div>
+                </div>
+                <!-- boton Anterior -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <!-- Boton Posterior -->
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </div>
+    <div class="container-fluid NoVisible border-top">
+        <div class="row text-center">
+            <h1 class="FontTitlePrincipal">Bienvenido A Syst-em! </h1>
+            <p class="FontParrafoPrincipal">Encontrá Auriculares Inalámbricos, con Bluetooth y micrófono. Elegí tu próximo Auricular: Sony, Samsung, Philips, xiaomi, apple y más al mejor precio.</p>
+        </div>
+    </div>
+        <div class="container Visible    ms-auto">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner col-12">
+                    <div class="carousel-item active my-2" data-bs-interval="2000">
+                        <img src="/img/marcas/Apple.png" class="col-2 mx-2 img-fluid" alt="...">
+                        <img src="/img/marcas/Corsair.png" class="col-2 mx-3 img-fluid" alt="...">
+                        <img src="/img/marcas/Hyperx.png" class="col-2 mx-3 img-fluid" alt="...">
+                        <img src="/img/marcas/JBL.png" class="col-2 mx-3 img-fluid" alt="...">
+                        <img src="/img/marcas/Logitech.png" class="col-2 mx-3 mb-5 img-fluid" alt="...">
+                    </div>
+                    <div class="carousel-item col-12 " data-bs-interval="2000">
+                        <img src="/img/marcas/Philips.png" class="col-2 mx-3 img-fluid" alt="...">
+                        <img src="/img/marcas/Razer.png" class="col-2 mx-3 img-fluid" alt="...">
+                        <img src="/img/marcas/redragon.png" class="col-2 mx-3 img-fluid" alt="...">
+                        <img src="/img/marcas/samsung.png" class="col-2 mx-3 img-fluid" alt="...">
+                        <img src="/img/marcas/xiaomi.png" class="col-2 mx-3 img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!-------------------FIN DOCUMENT HTML----------------->
+    <!-----------------------SCRIPTS----------------------->
+    <!--JQuery -->
+    <script src="/js/jquery.js"></script>
+
+    <!--Bootstrap -->
+    <script src="/js/bootstrap.bundle.min.js"></script>
+
+    <!-- FIREBASE -->
+    <script src="/js/firebase-app.js"></script>
+    <script src="/js/firebase-auth.js"></script>
+    <script src="/js/firebase-firestore.js"></script>
+
+    <script>
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyDLm7rDXeyPIuoRCUvyhQNF4DENGbPLHH4",
+            authDomain: "proyecto-final-javascript.firebaseapp.com",
+            projectId: "proyecto-final-javascript",
+            storageBucket: "proyecto-final-javascript.appspot.com",
+            messagingSenderId: "945015736179",
+            appId: "1:945015736179:web:0bdf48b3a891470ae96706",
+            measurementId: "G-27V01NNQG8"
+        };
+
+        //inicializar firebase
+        firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+        const fs = firebase.firestore();
+
+    </script>
+
+    <!--CodigoPropio-->
+    <script src="/js/main.js" defer></script>
+    <script src="/js/resumen.js"></script>
+
+    <!--CodigoPropio-->
+    <script src="/js/formulario.js"></script>
+    <!-----------------------SCRIPTS----------------------->
+</body>
+
+</html>
