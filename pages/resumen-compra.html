@@ -5,13 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.css">
-    <link rel="stylesheet" href="/css/formulario.css">
-    <link rel="stylesheet" href="/css/estilos-propios.css">
+    <link rel="stylesheet" href="../css/bootstrap5.css">
+    <link rel="stylesheet" href="../css/estilos-propios.css">
+    <link rel="stylesheet" href="../css/formulario.css">
     <title>Document</title>
 </head>
 
-<body>  
+<body>
+    <div class="container-fluid sticky-top">
+        <nav class="row mb-3">
+            <ul class="nav">
+                <li class="mx-2 pointer">
+                    <a class="borderReturn" href="../index.html"><svg width="30" height="30" fill="currentColor" class="bi bi-arrow-bar-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M12.5 15a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 1 0v13a.5.5 0 0 1-.5.5zM10 8a.5.5 0 0 1-.5.5H3.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L3.707 7.5H9.5a.5.5 0 0 1 .5.5z"/>
+                        </svg>Regresar</a>
+                </li>
+            </ul>
+        </nav>
+    </div>  
     <div class="container">
         <div class="row text-center">
             <h3 class="FontResumen">RESUMEN DE COMPRA</h3>
@@ -21,11 +32,11 @@
         <table class="table">
             <thead>
                 <tr class="row bg-info">
-                    <th class="col-4 fontTitleCart">Titulo</th>
-                    <th class="col-2 fontTitleCart">Cantidad</th>
-                    <th class="col-2 fontTitleCart">Precio</th>
-                    <th class="col-2 fontTitleCart"></th>
-                    <th class="col-2"></th>
+                    <th class="col-4 col-sm-4 fontTitleCart">Titulo</th>
+                    <th class="col-2 col-sm-2 fontTitleCart">Cantidad</th>
+                    <th class="col-2 col-sm-2 fontTitleCart">Precio</th>
+                    <th class="col-2 col-sm-2 fontTitleCart"></th>
+                    <th class="col-2 col-sm-2"></th>
                 </tr>
             </thead>
             <tbody id="productos-del-carro">
