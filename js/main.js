@@ -13,7 +13,7 @@ class Producto {
 }
 
 //===PARLANTES====
-const producto_1 = new Producto('Parlante Jbl-a', 2500, 'Potencia de salida: 30wts <br>Autonomia de la bateria: 5hs <br>Voltaje: 110/220v <br>A prueba de agua: si <br>Puertos: Usb / 3.5mm <br>', 'Negro', "parlante", 'img/jbl-negro.jpg', 1, "a",0);
+const producto_1 = new Producto('Parlante Jbl-a', 2500, 'Potencia de salida: 30wts <br>Autonomia de la bateria: 5hs <br>Voltaje: 110/220v <br>A prueba de agua: si <br>Puertos: Usb / 3.5mm <br>', 'Negro', "parlante", './img/jbl-negro.jpg', 1, "a",0);
 const producto_2 = new Producto('Parlante Jbl-b', 900, 'Potencia de salida: 25wts<br>Autonomia de la bateria: 7hs<br>Voltaje: 110/220v<br>A prueba de agua: si<br>Puertos: Usb / 3.5mm<br>' ,'Gris', "parlante", 'img/jbl-gris.jpg', 1, "b", 1);
 const producto_3 = new Producto('Parlante Samsung', 2000, 'Potencia de salida: 40wts<br>Autonomia de la bateria: 12hs<br>Voltaje: 110/220v<br>A prueba de agua: si<br>Puertos: Usb / 3.5mm<br>', 'Rojo', "parlante", 'img/samsung-rojo.jpg', 1, "c",2);
 const producto_4 = new Producto('Parlante Xiaomi', 850, 'Potencia de salida: 40wts<br>Autonomia de la bateria: 10hs<br>Voltaje: 110/220v<br>A prueba de agua: si<br>Puertos: Usb / 3.5mm<br>' ,'azul', "parlante", 'img/xiaomi-azul.jpg', 1, "d",3);
