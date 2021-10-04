@@ -13,20 +13,20 @@ class Producto {
 }
 
 //===PARLANTES====
-const producto_1 = new Producto('Parlante Jbl-a', 2500, 'Potencia de salida: 30wts <br>Autonomia de la bateria: 5hs <br>Voltaje: 110/220v <br>A prueba de agua: si <br>Puertos: Usb / 3.5mm <br>', 'Negro', "parlante",'img/jbl-negro.jpg', 1, "a",0);
-const producto_2 = new Producto('Parlante Jbl-b', 900, 'Potencia de salida: 25wts<br>Autonomia de la bateria: 7hs<br>Voltaje: 110/220v<br>A prueba de agua: si<br>Puertos: Usb / 3.5mm<br>' ,'Gris', "parlante",'img/jbl-gris.jpg', 1, "b", 1);
-const producto_3 = new Producto('Parlante Samsung', 2000, 'Potencia de salida: 40wts<br>Autonomia de la bateria: 12hs<br>Voltaje: 110/220v<br>A prueba de agua: si<br>Puertos: Usb / 3.5mm<br>', 'Rojo', "parlante",'img/samsung-rojo.jpg', 1, "c",2);
-const producto_4 = new Producto('Parlante Xiaomi', 850, 'Potencia de salida: 40wts<br>Autonomia de la bateria: 10hs<br>Voltaje: 110/220v<br>A prueba de agua: si<br>Puertos: Usb / 3.5mm<br>' ,'azul', "parlante",'img/xiaomi-azul.jpg', 1, "d",3);
+const producto_1 = new Producto('Parlante Jbl-a', 2500, 'Potencia de salida: 30wts <br>Autonomia de la bateria: 5hs <br>Voltaje: 110/220v <br>A prueba de agua: si <br>Puertos: Usb / 3.5mm <br>', 'Negro', "parlante",'./img/jbl-negro.jpg', 1, "a",0);
+const producto_2 = new Producto('Parlante Jbl-b', 900, 'Potencia de salida: 25wts<br>Autonomia de la bateria: 7hs<br>Voltaje: 110/220v<br>A prueba de agua: si<br>Puertos: Usb / 3.5mm<br>' ,'Gris', "parlante",'./img/jbl-gris.jpg', 1, "b", 1);
+const producto_3 = new Producto('Parlante Samsung', 2000, 'Potencia de salida: 40wts<br>Autonomia de la bateria: 12hs<br>Voltaje: 110/220v<br>A prueba de agua: si<br>Puertos: Usb / 3.5mm<br>', 'Rojo', "parlante",'./img/samsung-rojo.jpg', 1, "c",2);
+const producto_4 = new Producto('Parlante Xiaomi', 850, 'Potencia de salida: 40wts<br>Autonomia de la bateria: 10hs<br>Voltaje: 110/220v<br>A prueba de agua: si<br>Puertos: Usb / 3.5mm<br>' ,'azul', "parlante",'./img/xiaomi-azul.jpg', 1, "d",3);
 //===AURICULARES===
-const producto_5 = new Producto('Apple Airpods', 850, 'Inalambrico: si<br>Bluetooth: si<br>Autonomia de bateria: 5hs<br>Alcance Inalambrico: 10m<br>', 'Blanco', 'auricular','img/airpods-png.jpg', 1, "e", 4);
-const producto_6 = new Producto('Samsung AKG', 500, 'microfono: si<br>largo del cable: 1.2m<br>conector: 3.5mm<br>impedancia: 32 Ω<br>', 'Negro', 'auricular','img/auris-akg.png', 1, "f",5);
-const producto_7 = new Producto('Samsung Clasic', 250, 'microfono: si<br>largo del cable: 1.2m<br>conector: 3.5mm<br>impedancia: 32 Ω<br>' ,'Blanco', 'auricular','img/auris-clasic-sam.png',1, "g", 6);
-const producto_8 = new Producto('Xiaomi Airpod', 750, 'Inalambrico: si<br>Bluetooth: si<br>Autonomia de bateria: 3hs<br>Alcance Inalambrico: 10m<br>' ,'Negro', 'auricular','img/auris-xiaomi.png',1, "h", 7);
+const producto_5 = new Producto('Apple Airpods', 850, 'Inalambrico: si<br>Bluetooth: si<br>Autonomia de bateria: 5hs<br>Alcance Inalambrico: 10m<br>', 'Blanco', 'auricular','./img/airpods-png.jpg', 1, "e", 4);
+const producto_6 = new Producto('Samsung AKG', 500, 'microfono: si<br>largo del cable: 1.2m<br>conector: 3.5mm<br>impedancia: 32 Ω<br>', 'Negro', 'auricular','./img/auris-akg.png', 1, "f",5);
+const producto_7 = new Producto('Samsung Clasic', 250, 'microfono: si<br>largo del cable: 1.2m<br>conector: 3.5mm<br>impedancia: 32 Ω<br>' ,'Blanco', 'auricular','./img/auris-clasic-sam.png',1, "g", 6);
+const producto_8 = new Producto('Xiaomi Airpod', 750, 'Inalambrico: si<br>Bluetooth: si<br>Autonomia de bateria: 3hs<br>Alcance Inalambrico: 10m<br>' ,'Negro', 'auricular','./img/auris-xiaomi.png',1, "h", 7);
 //===GAMING===
 const producto_9 = new Producto('Hyperx A-100', 1000,'Microfono: Si<br>conector: 3.5mm<br>Frecuencia de Respuesta: 20 – 20k Hz<br>Retroiluminado: No<br>', 'Negro', 'gaming','./img/hyperx.png', 1, "i", 8);
-const producto_10 = new Producto('Logitech P20', 1100, 'Microfono: Si<br>conector: 3.5mm<br>Frecuencia de Respuesta: 20 – 20k Hz<br>Retroiluminado: No<br>' ,'Negro', 'gaming','img/logitech.png', 1, "j", 9);
-const producto_11 = new Producto('Noga zpx', 950, 'Microfono: Si<br>conector: 3.5mm<br>Frecuencia de Respuesta: 20 – 20k Hz<br>Retroiluminado: Si<br>' ,'Rojo', 'gaming','img/noga-rojo.png', 1, "k", 10);
-const producto_12 = new Producto('kotion tzx', 750, 'Microfono: Si<br>conector: 3.5mm<br>Frecuencia de Respuesta: 20 – 20k Hz<br>Retroiluminado: Si<br>' ,'Azul', 'gaming','img/kotion.png', 1, "l", 11);
+const producto_10 = new Producto('Logitech P20', 1100, 'Microfono: Si<br>conector: 3.5mm<br>Frecuencia de Respuesta: 20 – 20k Hz<br>Retroiluminado: No<br>' ,'Negro', 'gaming','./img/logitech.png', 1, "j", 9);
+const producto_11 = new Producto('Noga zpx', 950, 'Microfono: Si<br>conector: 3.5mm<br>Frecuencia de Respuesta: 20 – 20k Hz<br>Retroiluminado: Si<br>' ,'Rojo', 'gaming','./img/noga-rojo.png', 1, "k", 10);
+const producto_12 = new Producto('kotion tzx', 750, 'Microfono: Si<br>conector: 3.5mm<br>Frecuencia de Respuesta: 20 – 20k Hz<br>Retroiluminado: Si<br>' ,'Azul', 'gaming','./img/kotion.png', 1, "l", 11);
 
 //=========================================BASE DE DATOS===========================================
 const almacenDeproductos = [producto_1, producto_2, producto_3, producto_4, producto_5, producto_6, producto_7, producto_8, producto_9, producto_10, producto_11, producto_12]
