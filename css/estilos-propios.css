@@ -47,7 +47,6 @@ li a:hover {
 }
 .fontPrice{
     font-size: 40px;
-    /* color: black; */
     color: rgb(136, 129, 129);
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
@@ -129,4 +128,12 @@ li a:hover {
 .titleRegistro{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 35px;
+}
+@media (min-width: 360px) and (max-width:480px){
+    .fontTitle{
+        font-size: 15px;
+    }
+    .fontTitleCart{
+        font-size: 12px;
+    }
 }

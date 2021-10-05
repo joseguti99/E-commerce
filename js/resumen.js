@@ -14,7 +14,7 @@ function actualizarCarrito(productos) {
                                     <td class="col-4"><p class="fontTitle my-3">${producto.titulo}<p></td>
                                     <td class="col-2"><p class="fontTitle my-3">${producto.cantidad}<p></td>
                                     <td class="col-2"><p class="fontTitle my-3">$${producto.precio}<p></td>
-                                    <th class="col-2"><img src="../${producto.imagen}" class="col-4 col-sm-12 col-md-10 col-lg-8 col-xl-4" alt=""></th>
+                                    <th class="col-2"><img src="../${producto.imagen}" class="col-12 col-sm-12 col-md-10 col-lg-8 col-xl-4" alt=""></th>
                                     <td class="col-2"><button class="btn-danger my-3" onclick="quitarDelCarrito()">X</button></td>
                                 </tr>`;
     //sumar productos y multiplicar segun la cantidad
@@ -49,7 +49,7 @@ function actualizarCarrito(productos) {
 
             $.post(urlApiPost, JSON.stringify(datosDeCompra), (respuesta, status) => {
                 const ordenDeCompra = respuesta.init_point
-                $("#botonPagar").html(`<a class="btn btn-info border col-2" id="pagarProducto" href="${ordenDeCompra}" tarjet_blank>PAGAR</a>`)
+                $("#botonPagar").html(`<a class="btn btn-info border col-3" id="pagarProducto" href="${ordenDeCompra}" tarjet_blank>PAGAR</a>`)
             })
 }
 
