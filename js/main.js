@@ -21,10 +21,10 @@ const producto_5 = new Producto('Apple Airpods', 850, 'Inalambrico: si<br>Blueto
 const producto_6 = new Producto('Samsung AKG', 500, 'microfono: si<br>largo del cable: 1.2m<br>conector: 3.5mm<br>impedancia: 32 Ω<br>', 'auricular','img/auris-akg.png', 1, "f",5);
 const producto_7 = new Producto('Samsung Clasic', 250, 'microfono: si<br>largo del cable: 1.2m<br>conector: 3.5mm<br>impedancia: 32 Ω<br>', 'auricular','img/auris-clasic-sam.png',1, "g", 6);
 const producto_8 = new Producto('Xiaomi Airpod', 750, 'Inalambrico: si<br>Bluetooth: si<br>Autonomia de bateria: 3hs<br>Alcance Inalambrico: 10m<br>', 'auricular','img/auris-xiaomi.png',1, "h", 7);
-//===GAMING===
+//===GAMING====
 const producto_9 = new Producto('Hyperx A-100', 1000,'Microfono: Si<br>conector: 3.5mm<br>Frecuencia de Respuesta: 20 – 20k Hz<br>Retroiluminado: No<br>', 'gaming','img/hyperx.png', 1, "i", 8);
 const producto_10 = new Producto('Logitech P20', 1100, 'Microfono: Si<br>conector: 3.5mm<br>Frecuencia de Respuesta: 20 – 20k Hz<br>Retroiluminado: No<br>', 'gaming','img/logitech.png', 1, "j", 9);
-const producto_11 = new Producto('Noga zpx', 950, 'Microfono: Si<br>conector: 3.5mm<br>Frecuencia de Respuesta: 20 – 20k Hz<br>Retroiluminado: Si<br>' ,'Rojo', 'img/noga-rojo.png', 1, "k", 10);
+const producto_11 = new Producto('Noga zpx', 950, 'Microfono: Si<br>conector: 3.5mm<br>Frecuencia de Respuesta: 20 – 20k Hz<br>Retroiluminado: Si<br>' ,'gaming', 'img/noga-rojo.png', 1, "k", 10);
 const producto_12 = new Producto('kotion tzx', 750, 'Microfono: Si<br>conector: 3.5mm<br>Frecuencia de Respuesta: 20 – 20k Hz<br>Retroiluminado: Si<br>', 'gaming','img/kotion.png', 1, "l", 11);
 
 //=========================================BASE DE DATOS===========================================

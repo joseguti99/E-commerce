@@ -22,7 +22,7 @@ function actualizarCarrito(productos) {
     $("#precio-Final").html("$" + productosPrecio);
     });
     $("#productos-del-carro").html(tbody)
-    //===API MERCADO PAGO===
+    //===API MERCADO PAGO====
     //Convertir mis articulos al formato meli
     const ElementosMeli = carritoLS.map((producto) => {
         return {
