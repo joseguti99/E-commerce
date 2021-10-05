@@ -28,8 +28,6 @@ const form =  document.querySelector("#formulario")
             form.reset();
             //cerrar modal
             $("#modalIngreso").modal('hide');
-            console.log("Ingreso Correctamente")
-            console.log("registrado")
         })
 });
 
@@ -48,7 +46,6 @@ modalRegistro.addEventListener("submit", (e) => {
             form.reset();
             //cerrar modal
             $("#modalRegistro").modal('hide');
-            console.log("Ingreso Correctamente")
         })
 })
 
@@ -57,9 +54,7 @@ const cerrarSesion = document.querySelector("#cerrarSesion");
     cerrarSesion.addEventListener("click", (e) => {
         e.preventDefault();
         auth.signOut().then(() => {
-            console.log("cerraste sesion")
         })
-
 });
 
 //Coleccion de Datos
@@ -68,11 +63,9 @@ auth.onAuthStateChanged(user => {
         fs.collection("box")
         .get()
         .then((snapshot) => {
-            console.log("Usuario Registrado")
             verificacionInicio(user)
         })
     }else{
-        console.log("Usuario no Registrado")
         verificacionInicio(user);
     }
 });
@@ -103,7 +96,6 @@ const botonFacebook = document.querySelector("#facebook")
         auth.signInWithPopup(provider)
         .then(resultado =>{
             console.log(resultado)
-            console.log("facebook sign in")
         })
         .catch(error => {
             console.log(error)
