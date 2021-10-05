@@ -10,41 +10,43 @@
     <link rel="stylesheet" href="css/estilos-propios.css">
     <!-- bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
-    <title>INICIO / SYSTEM</title>
+    <title>INICIO / SYST-EM</title>
 </head>
 
 <body>
-    <div class="container-fluid sticky-top">
-        <nav class="row mb-3">
-            <ul class="nav justify-content-end">
-                <li class="nav-item col-5 col-sm-6 col-md-2 col-lg-2  col-xl-2 col-xxl-2 pointer NoVisible"
-                    style="display: none;">
-                    <a class="active" data-bs-toggle="modal" data-bs-target="#modalIngreso">Ingresar<img
-                            src="img/login.svg" alt=""></a>
-                </li>
-                <li class="nav-item col-5 col-sm-6 col-md-3 col-lg-2 col-xl-2  col-xxl-2 pointer NoVisible"
-                    style="display: none;">
-                    <a class="active" data-bs-toggle="modal" data-bs-target="#modalRegistro">Registrarse<img
-                            src="img/login.svg" alt=""></a>
-                </li>
-                <li class="col-6 col-xl-2  col-sm-6 col-md-6 col-xxl-2 Visible mt-1" style="display: none;">
-                    <a class="btn Visible col-8 pt-2 borderSpan" href="pages/resumen-compra.html"><svg width="40"
-                            height="40" fill="black" class="bi bi-cart-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                        </svg>
-                        <span id="contador-productos" class="fontSpan ms-1"
-                            onclick="agregarAlCarrito('${producto.titulo}')">0</span>
-                    </a>
-                </li>
-                <li class="nav-item col-6 col-sm-6 col-md-3 col-lg-4 col-xl-2  col-xxl-2 pointer Visible mt-2"
-                    style="display: none;">
-                    <a class="active" id="cerrarSesion" data-bs-toggle="modal" data-bs-target="#signUpModal">Cerrar
-                        Sesion<img src="img/login.svg"></a>
-                </li>
-            </ul>
-        </nav>
-    </div>
+    <header>
+        <div class="container-fluid sticky-top">
+            <nav class="row mb-3">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item col-5 col-sm-6 col-md-2 col-lg-2  col-xl-2 col-xxl-2 pointer NoVisible"
+                        style="display: none;">
+                        <a class="active" data-bs-toggle="modal" data-bs-target="#modalIngreso">Ingresar<img
+                                src="img/login.svg" alt=""></a>
+                    </li>
+                    <li class="nav-item col-5 col-sm-6 col-md-3 col-lg-2 col-xl-2  col-xxl-2 pointer NoVisible"
+                        style="display: none;">
+                        <a class="active" data-bs-toggle="modal" data-bs-target="#modalRegistro">Registrarse<img
+                                src="img/login.svg" alt=""></a>
+                    </li>
+                    <li class="col-6 col-xl-2  col-sm-6 col-md-6 col-xxl-2 Visible mt-1" style="display: none;">
+                        <a class="btn Visible col-8 pt-2 borderSpan" href="pages/resumen-compra.html"><svg width="40"
+                                height="40" fill="black" class="bi bi-cart-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg>
+                            <span id="contador-productos" class="fontSpan ms-1"
+                                onclick="agregarAlCarrito('${producto.titulo}')">0</span>
+                        </a>
+                    </li>
+                    <li class="nav-item col-6 col-sm-6 col-md-3 col-lg-4 col-xl-2  col-xxl-2 pointer Visible mt-2"
+                        style="display: none;">
+                        <a class="active" id="cerrarSesion" data-bs-toggle="modal" data-bs-target="#signUpModal">Cerrar
+                            Sesion<img src="img/login.svg"></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <!-- MODAL DE INGRESAR -->
     <div class="modal fade" id="modalIngreso" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-sm modal-lg">
