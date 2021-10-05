@@ -1,8 +1,10 @@
-//--------------------------------LLAMADA DEL CARRITO AL LOCAL STORAGE -----------------------------------
+//---LLAMADA DEL CARRITO AL LOCAL STORAGE---
 let carritoLS = JSON.parse(localStorage.getItem("carrito"));
 if (carritoLS) {
     actualizarCarrito(carritoLS);
 }
+
+//MOSTRAR RESUMEN DE COMPRA
 function actualizarCarrito(productos) {
     let tbody = [];
     let productosPrecio = 0;
@@ -20,7 +22,7 @@ function actualizarCarrito(productos) {
     $("#precio-Final").html("$" + productosPrecio);
     });
     $("#productos-del-carro").html(tbody)
-    //===========================API MERCADO PAGO===========================
+    //===API MERCADO PAGO===
     //Convertir mis articulos al formato meli
     const ElementosMeli = carritoLS.map((producto) => {
         return {
@@ -50,6 +52,8 @@ function actualizarCarrito(productos) {
                 $("#botonPagar").html(`<a class="btn btn-info border col-2" id="pagarProducto" href="${ordenDeCompra}" tarjet_blank>PAGAR</a>`)
             })
 }
+
+//Funcion elimina fila y limpia el localstorage
 function quitarDelCarrito(btnId){
     let productosCarrito = JSON.parse(localStorage.getItem("carrito"))
     let removerProductoCarrito = productosCarrito.splice(btnId,1)
