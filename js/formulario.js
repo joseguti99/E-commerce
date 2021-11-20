@@ -1,4 +1,4 @@
-//VERIFICACION DE INICIO DE SESION
+///VERIFICACION DE INICIO DE SESION
 const linksNoVisibles = document.querySelectorAll(".NoVisible")
 const linksVisibles = document.querySelectorAll(".Visible")
 
